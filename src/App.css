@@ -1,0 +1,144 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.builder-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  max-width: 1200px;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.sidebar h4 {
+  margin-bottom: 10px;
+}
+
+.draggable-element {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.draggable-element:hover {
+  background-color: #ddd;
+}
+
+.form-canvas {
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+button {
+  width: 150px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.save-button {
+  background-color: #28a745;
+  width: 200px;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.form-preview {
+  margin-top: 20px;
+}
+
+pre {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .builder-container {
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-canvas {
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .form-preview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+  }
+}
